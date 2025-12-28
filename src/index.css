@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: radial-gradient(ellipse at bottom, #000000 0%, #000000 100%);
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-repeat: repeat;
+  z-index: -1;
+  will-change: background-position;
+}
+
+body::before {
+  background-image:
+    radial-gradient(2px 2px at 20px 30px, white, transparent),
+    radial-gradient(2px 2px at 80px 120px, white, transparent),
+    radial-gradient(2px 2px at 140px 60px, white, transparent),
+    radial-gradient(2px 2px at 200px 180px, white, transparent),
+    radial-gradient(2px 2px at 260px 90px, white, transparent);
+  background-size: 300px 300px;
+  background-position: 0 0;
+  opacity: 0.6;
+  animation: starsScrollSmall 60s linear infinite;
+}
+
+body::after {
+  background-image:
+    radial-gradient(1.5px 1.5px at 100px 150px, #c7d2fe, transparent),
+    radial-gradient(1.5px 1.5px at 220px 300px, #c7d2fe, transparent),
+    radial-gradient(1.5px 1.5px at 350px 400px, #c7d2fe, transparent);
+  background-size: 500px 500px;
+  background-position: 0 0;
+  opacity: 0.4;
+  animation: starsScrollBig 120s linear infinite;
+}
+
+@keyframes starsScrollSmall {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 -3000px;
+  }
+}
+
+@keyframes starsScrollBig {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 -2000px;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-16px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+html {
+  scroll-behavior: smooth;
+}
