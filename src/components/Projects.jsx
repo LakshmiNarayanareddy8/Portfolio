@@ -21,8 +21,8 @@ const projects = [
     title: "Fake News Detection System",
     desc: "MERN stack application using BERT and CLIP models to detect fake news articles.",
     img: p3,
-    live: "https://your-fake-news-project-link.com",
-    github: "https://github.com/yourgithub/fake-news-detection",
+    live: "https://vaarta-ai-seven.vercel.app",
+    github: "https://github.com/LakshmiNarayanareddy8/Vaarta-AI",
   },
 ];
 
