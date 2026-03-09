@@ -6,20 +6,18 @@ export default function About() {
       id="about"
       className="py-28 px-6 max-w-6xl mx-auto"
     >
-      {/* Top profile card */}
       <div
         data-aos="fade-up"
         className="bg-card glow-on-scroll border border-white/10
                    rounded-2xl p-8 flex flex-col md:flex-row gap-8 items-start"
       >
-        {/* Avatar */}
         <img
           src={avatar}
           alt="Profile"
           className="w-24 h-24 rounded-xl object-cover border border-white/20"
         />
 
-        {/* Info */}
+      
         <div className="flex-1">
           <h3 className="text-xl font-semibold text-primary">
             Annareddy Lakshmi Narayana Reddy
@@ -33,7 +31,7 @@ export default function About() {
            evaluation, and deployment, with an emphasis on scalability, accuracy, and performance.
           </p>
 
-          {/* Pills */}
+         
           <div className="flex flex-wrap gap-3 mt-6">
             
             <span className="px-4 py-1 text-sm rounded-full
@@ -46,7 +44,7 @@ export default function About() {
             </span>
           </div>
 
-          {/* Buttons */}
+          
           <div className="flex gap-4 mt-6">
             <a href="#projects">
               <button className="bg-primary text-black px-5 py-2 rounded-lg font-medium">
@@ -64,7 +62,7 @@ export default function About() {
         </div>
       </div>
 
-      {/* About Me text section */}
+      
       <div
         className="mt-16 max-w-3xl"
         data-aos="fade-up"

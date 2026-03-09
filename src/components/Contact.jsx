@@ -26,12 +26,12 @@ export default function Contact() {
       </h2>
 
       <div className="grid md:grid-cols-2 gap-12 items-center">
-        {/* Astronaut */}
+       
         <div className="flex justify-center" data-aos="fade-right">
           <img src={astronaut} alt="astronaut" className="w-75 animate-float" />
         </div>
 
-        {/* Form */}
+     
         <form
           ref={form}
           onSubmit={sendEmail}

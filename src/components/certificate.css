@@ -1,0 +1,45 @@
+.certificate-section{
+padding:60px 10%;
+text-align:center;
+}
+
+.certificate-title{
+font-size:36px;
+margin-bottom:40px;
+font-weight:bold;
+}
+
+.certificate-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+}
+
+.certificate-card{
+background:#111;
+color:white;
+padding:20px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+transition:0.3s;
+}
+
+.certificate-card:hover{
+transform:translateY(-8px);
+}
+
+.issuer{
+color:#00bfff;
+font-weight:600;
+margin-bottom:10px;
+}
+
+.certificate-card a{
+display:inline-block;
+margin-top:10px;
+padding:8px 16px;
+background:#00bfff;
+color:white;
+border-radius:6px;
+text-decoration:none;
+}

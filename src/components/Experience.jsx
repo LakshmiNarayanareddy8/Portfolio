@@ -25,12 +25,9 @@ export default function Experience() {
       </h2>
       <br></br>
 
-      {/* Timeline container */}
       <div className="relative">
-        {/* Horizontal line */}
         <div className="absolute top-1/2 left-0 w-full h-[2px] bg-white/20" />
 
-        {/* Timeline items */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
           {experience.map((e, i) => {
             const isTop = i % 2 === 0;
@@ -41,10 +38,8 @@ export default function Experience() {
                 className="relative flex justify-center"
                 data-aos="fade-up"
               >
-                {/* Dot on the line */}
                 <span className="absolute top-1/2 -translate-y-1/2 w-3 h-3 rounded-full bg-primary z-10" />
 
-                {/* Card */}
                 <div
                   className={`bg-card glow-on-scroll border border-white/10 rounded-xl p-6 w-72 text-center
                   ${isTop ? "-translate-y-28" : "translate-y-28"}`}

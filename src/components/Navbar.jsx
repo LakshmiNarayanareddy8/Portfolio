@@ -10,6 +10,7 @@ export default function Navbar() {
           <li><a href="#skills" className="hover:text-primary">Skills</a></li>
           <li><a href="#experience" className="hover:text-primary">Experience</a></li>
           <li><a href="#projects" className="hover:text-primary">Projects</a></li>
+          <li><a href="#certificates" className="hover:text-primary">Certificates</a></li>
           <li><a href="#contact" className="hover:text-primary">Contact</a></li>
         </ul>
       </div>
